@@ -1,0 +1,73 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'git:https://github.com/hixiaoguan/h5-font-reset.git' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose install initial load of /Users/product/GitHub/weui-work/package.json
+5 verbose installManyTop reading scoped package data from /Users/product/GitHub/weui-work/node_modules/bower/package.json
+6 verbose installManyTop reading scoped package data from /Users/product/GitHub/weui-work/node_modules/gulp/package.json
+7 verbose installManyTop reading scoped package data from /Users/product/GitHub/weui-work/node_modules/gulp-htmlmin/package.json
+8 verbose installManyTop reading scoped package data from /Users/product/GitHub/weui-work/node_modules/gulp-imagemin/package.json
+9 verbose installManyTop reading scoped package data from /Users/product/GitHub/weui-work/node_modules/gulp-less/package.json
+10 verbose installManyTop reading scoped package data from /Users/product/GitHub/weui-work/node_modules/gulp-minify-css/package.json
+11 verbose installManyTop reading scoped package data from /Users/product/GitHub/weui-work/node_modules/gulp-minify-html/package.json
+12 verbose installManyTop reading scoped package data from /Users/product/GitHub/weui-work/node_modules/gulp-rimraf/package.json
+13 verbose installManyTop reading scoped package data from /Users/product/GitHub/weui-work/node_modules/gulp-uglify/package.json
+14 verbose installManyTop reading scoped package data from /Users/product/GitHub/weui-work/node_modules/gulp-usemin/package.json
+15 info package.json gulp-minify-html@1.0.6 No repository field.
+16 info package.json gulp-minify-css@1.2.4 No repository field.
+17 verbose readDependencies loading dependencies from /Users/product/GitHub/weui-work/package.json
+18 silly cache add args [ 'git:https://github.com/hixiaoguan/h5-font-reset.git', null ]
+19 verbose cache add spec git:https://github.com/hixiaoguan/h5-font-reset.git
+20 silly cache add parsed spec { raw: 'git:https://github.com/hixiaoguan/h5-font-reset.git',
+20 silly cache add   scope: null,
+20 silly cache add   name: null,
+20 silly cache add   rawSpec: 'git:https://github.com/hixiaoguan/h5-font-reset.git',
+20 silly cache add   spec: 'git:https://github.com/hixiaoguan/h5-font-reset.git',
+20 silly cache add   type: 'git' }
+21 verbose addRemoteGit caching git:https://github.com/hixiaoguan/h5-font-reset.git
+22 silly tryClone cloning git:https://github.com/hixiaoguan/h5-font-reset.git via git:https://github.com/hixiaoguan/h5-font-reset.git
+23 verbose tryClone git-https-github-com-hixiaoguan-h5-font-reset-git-77d52cb4 not in flight; caching
+24 info git [ 'clone',
+24 info git   '--template=/Users/product/.npm/_git-remotes/_templates',
+24 info git   '--mirror',
+24 info git   'git:https//github.com/hixiaoguan/h5-font-reset.git',
+24 info git   '/Users/product/.npm/_git-remotes/git-https-github-com-hixiaoguan-h5-font-reset-git-77d52cb4' ]
+25 error git clone --template=/Users/product/.npm/_git-remotes/_templates --mirror git:https//github.com/hixiaoguan/h5-font-reset.git /Users/product/.npm/_git-remotes/git-https-github-com-hixiaoguan-h5-font-reset-git-77d52cb4: Cloning into bare repository '/Users/product/.npm/_git-remotes/git-https-github-com-hixiaoguan-h5-font-reset-git-77d52cb4'...
+25 error git clone --template=/Users/product/.npm/_git-remotes/_templates --mirror git:https//github.com/hixiaoguan/h5-font-reset.git /Users/product/.npm/_git-remotes/git-https-github-com-hixiaoguan-h5-font-reset-git-77d52cb4: ssh: Could not resolve hostname git: nodename nor servname provided, or not known
+25 error git clone --template=/Users/product/.npm/_git-remotes/_templates --mirror git:https//github.com/hixiaoguan/h5-font-reset.git /Users/product/.npm/_git-remotes/git-https-github-com-hixiaoguan-h5-font-reset-git-77d52cb4: fatal: Could not read from remote repository.
+25 error git clone --template=/Users/product/.npm/_git-remotes/_templates --mirror git:https//github.com/hixiaoguan/h5-font-reset.git /Users/product/.npm/_git-remotes/git-https-github-com-hixiaoguan-h5-font-reset-git-77d52cb4:
+25 error git clone --template=/Users/product/.npm/_git-remotes/_templates --mirror git:https//github.com/hixiaoguan/h5-font-reset.git /Users/product/.npm/_git-remotes/git-https-github-com-hixiaoguan-h5-font-reset-git-77d52cb4: Please make sure you have the correct access rights
+25 error git clone --template=/Users/product/.npm/_git-remotes/_templates --mirror git:https//github.com/hixiaoguan/h5-font-reset.git /Users/product/.npm/_git-remotes/git-https-github-com-hixiaoguan-h5-font-reset-git-77d52cb4: and the repository exists.
+26 verbose stack Error: Command failed: git clone --template=/Users/product/.npm/_git-remotes/_templates --mirror git:https//github.com/hixiaoguan/h5-font-reset.git /Users/product/.npm/_git-remotes/git-https-github-com-hixiaoguan-h5-font-reset-git-77d52cb4
+26 verbose stack Cloning into bare repository '/Users/product/.npm/_git-remotes/git-https-github-com-hixiaoguan-h5-font-reset-git-77d52cb4'...
+26 verbose stack ssh: Could not resolve hostname git: nodename nor servname provided, or not known
+26 verbose stack fatal: Could not read from remote repository.
+26 verbose stack
+26 verbose stack Please make sure you have the correct access rights
+26 verbose stack and the repository exists.
+26 verbose stack
+26 verbose stack     at ChildProcess.exithandler (child_process.js:751:12)
+26 verbose stack     at ChildProcess.emit (events.js:110:17)
+26 verbose stack     at maybeClose (child_process.js:1015:16)
+26 verbose stack     at Socket.<anonymous> (child_process.js:1183:11)
+26 verbose stack     at Socket.emit (events.js:107:17)
+26 verbose stack     at Pipe.close (net.js:485:12)
+27 verbose cwd /Users/product/GitHub/weui-work
+28 error Darwin 15.5.0
+29 error argv "node" "/usr/local/bin/npm" "install" "git:https://github.com/hixiaoguan/h5-font-reset.git"
+30 error node v0.12.7
+31 error npm  v2.11.3
+32 error code 128
+33 error Command failed: git clone --template=/Users/product/.npm/_git-remotes/_templates --mirror git:https//github.com/hixiaoguan/h5-font-reset.git /Users/product/.npm/_git-remotes/git-https-github-com-hixiaoguan-h5-font-reset-git-77d52cb4
+33 error Cloning into bare repository '/Users/product/.npm/_git-remotes/git-https-github-com-hixiaoguan-h5-font-reset-git-77d52cb4'...
+33 error ssh: Could not resolve hostname git: nodename nor servname provided, or not known
+33 error fatal: Could not read from remote repository.
+33 error
+33 error Please make sure you have the correct access rights
+33 error and the repository exists.
+34 error If you need help, you may report this error at:
+34 error     <https://github.com/npm/npm/issues>
+35 verbose exit [ 1, true ]
