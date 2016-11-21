@@ -1,0 +1,92 @@
+.topbar {
+  width: 100%;
+  height: 5rem;
+  padding: 1.1rem 0 0 1.1rem;
+}
+.topbar .logo {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+}
+*:focus {
+  outline: 0 !important;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clear {
+  display: block;
+  overflow: hidden;
+}
+.no-bg {
+  background-color: transparent;
+  color: inherit;
+}
+.block {
+  display: block;
+}
+.block.hide {
+  display: none;
+}
+.inline {
+  display: inline-block !important;
+}
+.no-border {
+  border-color: transparent;
+  border-width: 0;
+}
+.no-radius {
+  border-radius: 0;
+}
+.show {
+  visibility: visible;
+}
+.hide {
+  visibility: hidden;
+}
+.img-full {
+  width: 100%;
+}
+.img-full img {
+  width: 100%;
+}

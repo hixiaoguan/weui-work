@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>WeUI-Work</title>
+    <link rel="stylesheet" href="css/weui.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/build.min.css"/>
+</head>
+<body>
+<!-- Logo -->
+<div class="topbar">
+    <div class="logo img-full">
+        <img src="images/logo.png" alt="logo"/>
+    </div>
+</div>
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper img-full">
+        <div class="swiper-slide">
+            <img src="http://app.weixin.qing5.com/product/test/tempimg/1.jpg" alt=""/>
+        </div>
+        <div class="swiper-slide">
+            <img src="http://app.weixin.qing5.com/product/test/tempimg/2.jpg" alt=""/>
+        </div>
+        <div class="swiper-slide">
+            <img src="http://app.weixin.qing5.com/product/test/tempimg/3.jpg" alt=""/>
+        </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+
+<script src="js/h5-font-reset.min.js"></script>
+<script src="js/swiper.min.js"></script>
+
+<script>
+    //幻灯片设置
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+</script>
+</body>
+</html>

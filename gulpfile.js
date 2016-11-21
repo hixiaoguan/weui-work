@@ -1,3 +1,4 @@
+//初始化
 var gulp = require('gulp'),
     del = require('gulp-rimraf'),
     less = require('gulp-less'),
@@ -6,13 +7,15 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     usemin = require('gulp-usemin'),
     htmlmin = require('gulp-htmlmin');
+
 //路径设定
-var path = 'default';
+var path = 'build';
 var paths = {
     distRoot: 'dist/'+path,
     srcRoot: 'src/'+path,
-    lessRoot: 'less/'
-}
+    lessRoot: 'src/'+path+'/less/'
+};
+
 //清理HTML
 gulp.task('htmlmin', function () {
     var options = {
@@ -29,16 +32,12 @@ gulp.task('htmlmin', function () {
         .pipe(htmlmin(options))
         .pipe(gulp.dest(paths.distRoot));
 });
+
 //编译less文件
 gulp.task('less', function(){
     return gulp.src(paths.lessRoot+path+'.less')
         .pipe(less())
         .pipe(gulp.dest(paths.srcRoot+'/css'));
-});
-//拷贝文件
-gulp.task('copy', function() {
-    return gulp.src(paths.srcRoot+'/*.php')
-        .pipe(gulp.dest(paths.distRoot));
 });
 
 //删除dist目录
@@ -65,9 +64,8 @@ gulp.task('usemin', function() {
 });
 
 //打包到dist目录
-gulp.task('dist', [ 'del','usemin','htmlmin','minifyimages','copy']);
-//打包到html目录
-gulp.task('html', [ 'del','usemin','htmlmin','minifyimages']);
+gulp.task('dist', [ 'del','usemin','htmlmin','minifyimages']);
+
 //监控
 gulp.task('watch', function() {
     //监控所有.less

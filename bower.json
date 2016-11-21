@@ -2,7 +2,9 @@
   "name": "weui-work",
   "version": "1.0.0",
   "dependencies": {
-    "h5-font-reset": "https://github.com/hixiaoguan/h5-font-reset.git"
+    "h5-font-reset": "https://github.com/hixiaoguan/h5-font-reset.git",
+    "weui": "^1.0.2",
+    "swiper": "^3.4.0"
   },
   "devDependencies": {}
 }
