@@ -1,17 +1,38 @@
 .topbar {
   width: 100%;
   height: 5rem;
-  padding: 1.1rem 0 0 1.1rem;
+  padding: 1.2rem 1rem 0 1rem;
 }
 .topbar .logo {
+  width: 12rem;
+}
+.topbar .logo .logo-img {
   width: 2.8rem;
   height: 2.8rem;
+}
+.topbar .logo .logo-txt {
+  font-size: 1.6rem;
+  color: #3b3b3b;
+  margin-left: 0.8rem;
+}
+.topbar .location {
+  width: 18rem;
+  margin-top: 0.6rem;
+}
+.topbar .location .map_icon {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.topbar .location .map_txt {
+  font-size: 1.2rem;
+  color: #3b3b3b;
+  margin-left: 0.6rem;
 }
 .swiper-container {
   width: 100%;
   height: 100%;
 }
-.swiper-slide {
+.swiper-container .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -28,6 +49,50 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
 }
+.swiper-container .swiper-slide img {
+  max-height: 12rem;
+  min-height: 12rem;
+}
+.swiper-container .swiper-pagination-bullets {
+  bottom: 0;
+}
+.swiper-container .swiper-pagination .swiper-pagination-bullet {
+  opacity: 1;
+  background: #ffffff;
+}
+.swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+  background: #ffb607;
+}
+.live-list {
+  padding: 1rem;
+  border-bottom: 1px solid #cccccc;
+}
+.live-list .live-title {
+  color: #3f3f3f;
+  font-size: 1.2rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  padding: 0 .6rem;
+}
+.live-list .live-info {
+  height: 1.4rem;
+  padding: 0 .6rem;
+  font-size: 1.2rem;
+}
+.live-list .live-info div {
+  width: 5rem;
+  display: block;
+  float: left;
+}
+.live-list .live-info div img {
+  width: 1.4rem;
+  height: 1.3rem;
+  margin: .3rem .3rem 0 0;
+  float: left;
+}
+.live-list .live-info div span {
+  color: #8c7e7e;
+}
 * {
   margin: 0;
   padding: 0;
@@ -39,6 +104,9 @@
 }
 *:focus {
   outline: 0 !important;
+}
+body {
+  font-family: 'Microsoft YaHei';
 }
 a {
   text-decoration: none;

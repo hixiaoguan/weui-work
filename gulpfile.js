@@ -13,7 +13,8 @@ var path = 'build';
 var paths = {
     distRoot: 'dist/'+path,
     srcRoot: 'src/'+path,
-    lessRoot: 'src/'+path+'/less/'
+    lessRoot: 'src/'+path+'/less/',
+    bowerRoot: 'bower_components'
 };
 
 //清理HTML
@@ -62,6 +63,12 @@ gulp.task('usemin', function() {
         }))
         .pipe(gulp.dest(paths.distRoot));
 });
+
+//拷贝文件
+//gulp.task('copy', function() {
+//    return gulp.src(paths.bowerRoot+'/swiper/dist/js/maps/swiper.js.map')
+//        .pipe(gulp.dest(paths.distRoot+'/js/maps'));
+//});
 
 //打包到dist目录
 gulp.task('dist', [ 'del','usemin','htmlmin','minifyimages']);
